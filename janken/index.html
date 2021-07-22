@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>じゃんけん</title>
+    </head>
+    <body>
+        <header>
+            <h1>じゃんけん</h1>
+
+        </header>
+        <div>
+            <h2>あなたの手</h2>
+            <button type="button" onclick="janken(0)"><img src="pictures/0.png" alt="グー" width="100" height="100"></button>
+            <button type="button" onclick="janken(1)"><img src="pictures/1.png" alt="チョキ" width="100" height="100"></button>
+            <button type="button" onclick="janken(2)"><img src="pictures/2.png" alt="パー" width="100" height="100"></button>
+            <button type="button" onclick="janken(3)" id="gun" ><img src="pictures/gun.png" alt="gun" width="100" height="100"></button>
+        </div>
+        <div>
+            <h2>コンピューターの手</h2>
+            <img id="tekinote" width="100" height="100">
+        </div>
+        <div>
+            <h2 id="result"></h2>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <th>勝ち</th>
+                    <th>負け</th>
+                    <th>引き分け</th>
+                </tr>
+                <tr>
+                    <td><p id="kachi"></p></td>
+                    <td><p id="make"></p></td>
+                    <td><p id="wake"></p></td>
+                </tr>
+            </table>
+        </div>
+        <script src="js/sample.js"></script>
+    </body>
+</html>
